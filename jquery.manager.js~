@@ -36,4 +36,9 @@
             return manager_store[selector].push(ready_func);
         }
     };
+    $.manager.ready('.legal_footer', function() {
+        return alert("something ready ran.");
+    });
+    $.manager.invoke('.legal_footer');
+    $.manager.exec();
 }).call(this); 
